@@ -1,0 +1,22 @@
+node_modules
+dist
+test-data
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+**/.idea
+!.idea/icon_dark.png
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+**/.vscode/

@@ -1,0 +1,32 @@
+{
+  "name": "trivy-report-generator",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "./dist/trivyReportGenerator.js",
+  "scripts": {
+    "build": "npx tsc",
+    "generate:local": "npx tsc && node --inspect dist/trivyReportGenerator.js generate-report --report-file=./test-data/security-report-image-idm.json --result-file=./test-data/security-report-image-idm.html --ignore-file=./test-data/.trivyIgnore.json",
+    "check:local": "npx tsc && node --inspect dist/trivyReportGenerator.js check-result --report-file=./test-data/security-report-image-idm.json --ignore-file=./test-data/.trivyIgnore.json",
+    "validate-ignore-rules:local": "npx tsc && node --inspect dist/trivyReportGenerator.js validate-ignore-rules --trivy-report-directory=./test-data/security-reports --ignore-file=./test-data/.trivyIgnore.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deryoman/trivy-report-generator.git"
+  },
+  "author": "Julian Seiss",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/deryoman/trivy-report-generator/issues"
+  },
+  "homepage": "https://github.com/deryoman/trivy-report-generator#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^18.16.14",
+    "@types/yargs": "^17.0.24",
+    "typescript": "^5.0.4"
+  }
+}

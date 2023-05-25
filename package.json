@@ -1,6 +1,6 @@
 {
   "name": "trivy-report-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "bin": "./dist/trivyReportGenerator.js",
   "scripts": {
